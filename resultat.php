@@ -7,7 +7,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (
         !empty($_POST["nom"]) &&
         !empty($_POST["prenom"]) &&
-        !empty($_POST["temperature"])&&
+        preg_match("/^[a-zA-ZÀ-ÿ\s\-]+$/", $_POST["nom"]) &&
+        preg_match("/^[a-zA-ZÀ-ÿ\s\-]+$/", $_POST["prenom"]) &&
+        !empty($_POST["temperature"]) &&
         !empty($_POST["age"]) &&
         !empty($_POST["toux"])
     ) {
