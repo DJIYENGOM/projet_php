@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Formulaire de collecte d'informations</title>
+</head>
+<body>
+<div class="form-container">
+        <h1>Formulaire de collecte d'informations</h1>
+        <form action="resultat.php" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="poids">Poids (en kg) :</label>
+            <input type="number" id="poids" name="poids" required>
+
+            <label for="temperature">Température (en °C) :</label>
+            <input type="number" id="temperature" name="temperature" required>
+
+            <label>Âge :</label>
+            <div class="age-labels">
+                <label for="moins_de_18">Moins de 18 ans</label>
+                <input type="radio" id="moins_de_18" name="age" value="Moins de 18 ans" required>
+                <label for="18_30">18-30 ans</label>
+                <input type="radio" id="18_30" name="age" value="18-30 ans" required>
+                <label for="31_50">31-50 ans</label>
+                <input type="radio" id="31_50" name="age" value="31-50 ans" required>
+                <label for="plus_de_50">Plus de 50 ans</label>
+                <input type="radio" id="plus_de_50" name="age" value="Plus de 50 ans" required>
+            </div>
+
+            <label for="maux_de_tete">Avez-vous des maux de tête ?</label>
+            <div class="age-labels">
+                <label for="maux_de_tete_oui">Oui</label>
+                <input type="radio" id="maux_de_tete_oui" name="maux_de_tete" value="Oui" required>
+                <label for="maux_de_tete_non">Non</label>
+                <input type="radio" id="maux_de_tete_non" name="maux_de_tete" value="Non" required>
+            </div>
+
+            <label for="diarrhwee">Avez-vous de la diarrhée ?</label>
+            <div class="age-labels">
+                <label for="diarree_oui">Oui</label>
+                <input type="radio" id="diarree_oui" name="diarree" value="Oui" required>
+                <label for="diarree_non">Non</label>
+                <input type="radio" id="diarree_non" name="diarree" value="Non" required>
+            </div>
+
+            <label for="perte_odorat">Avez-vous des pertes d'odorat ?</label>
+            <div class="age-labels">
+                <label for="perte_odorat_oui">Oui</label>
+                <input type="radio" id="perte_odorat_oui" name="perte_odorat" value="Oui" required>
+                <label for="perte_odorat_non">Non</label>
+                <input type="radio" id="perte_odorat_non" name="perte_odorat" value="Non" required>
+            </div>
+
+            <label for="toux">Avez-vous de la Toux ?</label>
+            <div class="age-labels">
+                <label for="toux_oui">Oui</label>
+                <input type="radio" id="toux_oui" name="toux" value="Oui" required>
+                <label for="toux_non">Non</label>
+                <input type="radio" id="toux_non" name="toux" value="Non" required>
+            </div>
+
+            <input type="submit" value="Soumettre" name="Soumettre">
+        </form>
+    </div>
+
+</body>
+</html>
